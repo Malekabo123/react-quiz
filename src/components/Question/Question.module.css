@@ -1,0 +1,20 @@
+.question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.questionTitle {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 100%;
+}

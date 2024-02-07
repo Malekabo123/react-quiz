@@ -1,0 +1,83 @@
+.bar {
+  width: 60%;
+  height: 10px;
+  border-radius: 25px;
+  background-color: #6a558a;
+  margin: auto;
+  position: relative;
+}
+
+.bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.sameProgress::before {
+  background-color: #9e5ef8;
+  animation: timePass4 10s linear;
+}
+
+.progress::before {
+  background-color: #9e5ef8;
+  animation: timePass 10s linear;
+}
+
+.pending::before {
+  background-color: #f3f379;
+  animation: timePass2 1s linear;
+}
+
+.correct::before {
+  background-color: #54d80d;
+  animation: timePass3 2s linear;
+}
+
+.wrong::before {
+  background-color: #fd2b2b;
+  animation: timePass3 2s linear;
+}
+
+@keyframes timePass {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@keyframes timePass2 {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@keyframes timePass3 {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+@keyframes timePass4 {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .bar {
+    width: 90%;
+  }
+}

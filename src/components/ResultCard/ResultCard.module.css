@@ -1,0 +1,53 @@
+.resultCard {
+  width: 40%;
+  background-color: #9069d0;
+  color: #3a081d;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+  -webkit-box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.75);
+  animation: slideUp 1.5s forwards;
+}
+
+.resultCard > h1 {
+  margin-bottom: 3rem;
+  font-size: 2.7rem;
+}
+
+.border {
+  width: 80%;
+  height: 2px;
+  background-color: #444;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0.2;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1050px) {
+  .resultCard {
+    width: 70%;
+  }
+  .resultCard > h1 {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .resultCard {
+    width: 95%;
+  }
+}

@@ -1,0 +1,40 @@
+.option {
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 20px;
+  background-color: #59a9f4;
+  margin-bottom: 1rem;
+  color: #111;
+  font-size: 1.09rem;
+  cursor: pointer;
+}
+
+.option:last-child {
+  margin-bottom: 0;
+}
+
+.pending {
+  background-color: #f3f379;
+  pointer-events: none;
+  touch-action: none;
+}
+
+.correct {
+  pointer-events: none;
+  background-color: #54d80d;
+  touch-action: none;
+}
+
+.wrong {
+  pointer-events: none;
+  background-color: #fd2b2b;
+  touch-action: none;
+}
+
+@media (hover: hover) {
+  .option:hover {
+    background-color: #4c759c;
+  }
+}

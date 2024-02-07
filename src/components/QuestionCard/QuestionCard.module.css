@@ -1,0 +1,39 @@
+.questionCard {
+  width: 45%;
+  border-radius: 10px;
+  background-color: #2d1a4e;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.75);
+}
+
+.blue {
+  color: blue;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+@media (max-width: 1050px) {
+  .questionCard {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .questionCard {
+    width: 95%;
+    padding: 1rem;
+  }
+}

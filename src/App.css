@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  background: rgb(253, 223, 70);
+  background: linear-gradient(
+    90deg,
+    rgba(29, 26, 107, 1) 0%,
+    rgb(16, 153, 151) 100%
+  );
+}
+
+ul,
+h1,
+h2,
+h3,
+p,
+span {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+#title {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
